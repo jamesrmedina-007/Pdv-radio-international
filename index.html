@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PDV Radio Internacional, llevando un mensaje de fe, esperanza y salvación a nuestra comunidad y al mundo." />
+  <title>PDV Radio Internacional | Pan de Vida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="PDV Radio Internacional, inicio">
+      <span class="brand-mark">PDV</span>
+      <span><strong>Radio Internacional</strong><small>Pan de Vida</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#radio">Radio en Vivo</a>
+      <a href="#programacion">Programación</a>
+      <a href="#ministerio">Ministerio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">PAN DE VIDA RADIO INTERNACIONAL</p>
+        <h1>Una voz de fe para Denver y el mundo.</h1>
+        <p>Programación cristiana, música, palabra, testimonios y transmisiones que conectan a nuestra comunidad dondequiera que esté.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#radio">Escuchar en Vivo</a>
+          <a class="btn btn-secondary" href="#programacion">Ver Programación</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="radio" class="section live-section">
+      <div class="section-heading">
+        <p class="eyebrow">AL AIRE</p>
+        <h2>Escucha PDV Radio Internacional</h2>
+        <p>El reproductor está preparado para conectar el enlace oficial de streaming de la estación.</p>
+      </div>
+      <div class="player-card">
+        <div class="on-air"><span></span> EN VIVO</div>
+        <h3>PDV Radio Internacional</h3>
+        <p id="player-status">Agrega el URL oficial del stream en <code>script.js</code> para activar el reproductor.</p>
+        <audio id="radio-player" controls preload="none" aria-label="Reproductor de PDV Radio Internacional"></audio>
+        <div class="player-links">
+          <a href="https://www.facebook.com/PdvRadioInternacional/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://youtube.com/@pdvradioint" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="programacion" class="section alt-section">
+      <div class="section-heading">
+        <p class="eyebrow">CADA SEMANA</p>
+        <h2>Programación</h2>
+        <p>Una estructura fácil de actualizar desde GitHub cada vez que cambien los horarios o programas.</p>
+      </div>
+      <div class="schedule-grid">
+        <article class="schedule-card"><span>Lunes a Viernes</span><h3>Programación Matutina</h3><p>Agrega aquí horario, conductor y descripción.</p></article>
+        <article class="schedule-card"><span>Lunes a Viernes</span><h3>Palabra y Enseñanza</h3><p>Agrega aquí horario, pastor o ministerio invitado.</p></article>
+        <article class="schedule-card"><span>Fin de Semana</span><h3>Especiales PDV</h3><p>Transmisiones, cultos, música y eventos especiales.</p></article>
+      </div>
+    </section>
+
+    <section id="ministerio" class="section split-section">
+      <div>
+        <p class="eyebrow">NUESTRA MISIÓN</p>
+        <h2>Radio con propósito.</h2>
+        <p>PDV Radio Internacional puede usar este espacio para contar su historia, presentar el ministerio y explicar cómo la estación sirve a la comunidad hispana y cristiana.</p>
+        <p>La nueva página está diseñada para destacar primero lo que más importa: escuchar la radio, conocer la programación y encontrar las transmisiones más recientes.</p>
+      </div>
+      <div class="verse-card">
+        <p>“No sólo de pan vivirá el hombre, sino de toda palabra que sale de la boca de Dios.”</p>
+        <strong>Mateo 4:4</strong>
+      </div>
+    </section>
+
+    <section class="section media-section">
+      <div class="section-heading">
+        <p class="eyebrow">CONECTA</p>
+        <h2>Transmisiones y comunidad</h2>
+        <p>Este bloque puede mostrar videos recientes de YouTube, transmisiones de Facebook, fotografías de eventos y mensajes del ministerio.</p>
+      </div>
+      <div class="media-grid">
+        <a class="media-card" href="https://youtube.com/@pdvradioint" target="_blank" rel="noopener"><strong>YouTube</strong><span>Ver transmisiones y videos →</span></a>
+        <a class="media-card" href="https://www.facebook.com/PdvRadioInternacional/" target="_blank" rel="noopener"><strong>Facebook</strong><span>Seguir PDV Radio Internacional →</span></a>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div>
+        <p class="eyebrow">CONTACTO</p>
+        <h2>Mantente conectado.</h2>
+        <p>Agrega aquí el teléfono, correo electrónico, dirección y enlaces oficiales del ministerio.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:CONTACT_EMAIL_HERE">Enviar un mensaje</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>PDV Radio Internacional</strong><p>Pan de Vida Radio Internacional</p></div>
+    <p>© <span id="year"></span> PDV Radio Internacional. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
