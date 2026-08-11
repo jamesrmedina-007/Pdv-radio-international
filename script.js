@@ -1,24 +1,20 @@
-// Replace this with the station's direct MP3/AAC streaming URL.
-// Example: const STREAM_URL = 'https://example.com/live.mp3';
-const STREAM_URL = '';
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".main-nav");
 
-const player = document.querySelector('#radio-player');
-const status = document.querySelector('#player-status');
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("active");
+  });
 
-if (STREAM_URL) {
-  player.src = STREAM_URL;
-  status.textContent = 'Presiona play para escuchar la transmisión en vivo.';
+  document.querySelectorAll(".main-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("active");
+    });
+  });
 }
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+const year = document.getElementById("year");
 
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#main-nav');
-menuButton.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-});
-nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menuButton.setAttribute('aria-expanded', 'false');
-}));
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
