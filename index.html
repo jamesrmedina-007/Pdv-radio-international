@@ -1,116 +1,511 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PDV Radio Internacional, llevando un mensaje de fe, esperanza y salvación a nuestra comunidad y al mundo." />
-  <title>PDV Radio Internacional | Pan de Vida</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PDV Radio Internacional | La Radio de los Pentecostales</title>
+
+  <meta
+    name="description"
+    content="PDV Radio Internacional, La Radio de los Pentecostales. Escucha programación cristiana, predicación, adoración y transmisiones en vivo."
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="PDV Radio Internacional, inicio">
-      <span class="brand-mark">PDV</span>
-      <span><strong>Radio Internacional</strong><small>Pan de Vida</small></span>
+
+    <a href="#inicio" class="brand">
+      <span class="brand-main">PDV RADIO</span>
+      <span class="brand-sub">INTERNACIONAL</span>
     </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+
+    <button class="menu-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <nav class="main-nav">
       <a href="#inicio">Inicio</a>
-      <a href="#radio">Radio en Vivo</a>
+      <a href="#en-vivo">En Vivo</a>
+      <a href="#nosotros">Nosotros</a>
       <a href="#programacion">Programación</a>
-      <a href="#ministerio">Ministerio</a>
+      <a href="#videos">Videos</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section id="inicio" class="hero">
-      <div class="hero-overlay"></div>
+
+      <div class="hero-glow"></div>
+
       <div class="hero-content">
-        <p class="eyebrow">PAN DE VIDA RADIO INTERNACIONAL</p>
-        <h1>Una voz de fe para Denver y el mundo.</h1>
-        <p>Programación cristiana, música, palabra, testimonios y transmisiones que conectan a nuestra comunidad dondequiera que esté.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#radio">Escuchar en Vivo</a>
-          <a class="btn btn-secondary" href="#programacion">Ver Programación</a>
+
+        <div class="live-badge">
+          <span class="live-dot"></span>
+          EN VIVO
         </div>
-      </div>
-    </section>
 
-    <section id="radio" class="section live-section">
-      <div class="section-heading">
-        <p class="eyebrow">AL AIRE</p>
-        <h2>Escucha PDV Radio Internacional</h2>
-        <p>El reproductor está preparado para conectar el enlace oficial de streaming de la estación.</p>
-      </div>
-      <div class="player-card">
-        <div class="on-air"><span></span> EN VIVO</div>
-        <h3>PDV Radio Internacional</h3>
-        <p id="player-status">Agrega el URL oficial del stream en <code>script.js</code> para activar el reproductor.</p>
-        <audio id="radio-player" controls preload="none" aria-label="Reproductor de PDV Radio Internacional"></audio>
-        <div class="player-links">
-          <a href="https://www.facebook.com/PdvRadioInternacional/" target="_blank" rel="noopener">Facebook</a>
-          <a href="https://youtube.com/@pdvradioint" target="_blank" rel="noopener">YouTube</a>
+        <img
+          src="pdv-radio-logo.jpg"
+          alt="PDV Radio Internacional"
+          class="hero-logo"
+        >
+
+        <p class="hero-kicker">
+          PAN DE VIDA PRESENTA
+        </p>
+
+        <h1>
+          PDV Radio<br>
+          <span>Internacional</span>
+        </h1>
+
+        <h2>
+          La Radio de los Pentecostales
+        </h2>
+
+        <p class="hero-description">
+          Una señal llevando el mensaje de Jesucristo,
+          fe, esperanza, adoración y la Palabra de Dios
+          alrededor del mundo.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#en-vivo" class="btn btn-primary">
+            ▶ Escuchar en Vivo
+          </a>
+
+          <a
+            href="https://youtube.com/@ericromerochungry?si=HmNb-V5htd3egSe1"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            Ver Transmisiones
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <section id="programacion" class="section alt-section">
+
+    <!-- LIVE PLAYER -->
+    <section id="en-vivo" class="section live-section">
+
       <div class="section-heading">
-        <p class="eyebrow">CADA SEMANA</p>
-        <h2>Programación</h2>
-        <p>Una estructura fácil de actualizar desde GitHub cada vez que cambien los horarios o programas.</p>
+
+        <p class="eyebrow">
+          🔴 TRANSMITIENDO
+        </p>
+
+        <h2>
+          Escucha PDV Radio Internacional
+        </h2>
+
+        <p>
+          Nuestra señal está disponible para ti dondequiera que estés.
+        </p>
+
       </div>
-      <div class="schedule-grid">
-        <article class="schedule-card"><span>Lunes a Viernes</span><h3>Programación Matutina</h3><p>Agrega aquí horario, conductor y descripción.</p></article>
-        <article class="schedule-card"><span>Lunes a Viernes</span><h3>Palabra y Enseñanza</h3><p>Agrega aquí horario, pastor o ministerio invitado.</p></article>
-        <article class="schedule-card"><span>Fin de Semana</span><h3>Especiales PDV</h3><p>Transmisiones, cultos, música y eventos especiales.</p></article>
+
+      <div class="player-container">
+
+        <iframe
+          src="https://www.305streamhd.com/radio/small_player.php?data=c0bb646b26251cc864e5be877bceb4f4"
+          width="100%"
+          height="250"
+          frameborder="0"
+          scrolling="no"
+          allow="autoplay;">
+        </iframe>
+
       </div>
+
     </section>
 
-    <section id="ministerio" class="section split-section">
-      <div>
-        <p class="eyebrow">NUESTRA MISIÓN</p>
-        <h2>Radio con propósito.</h2>
-        <p>PDV Radio Internacional puede usar este espacio para contar su historia, presentar el ministerio y explicar cómo la estación sirve a la comunidad hispana y cristiana.</p>
-        <p>La nueva página está diseñada para destacar primero lo que más importa: escuchar la radio, conocer la programación y encontrar las transmisiones más recientes.</p>
+
+    <!-- MISSION -->
+    <section class="mission-section">
+
+      <div class="mission-content">
+
+        <p class="eyebrow">
+          NUESTRA MISIÓN
+        </p>
+
+        <h2>
+          Una voz de fe para las naciones
+        </h2>
+
+        <p>
+          PDV Radio Internacional existe para compartir el Evangelio
+          de Jesucristo a través de la radio, la música, la predicación,
+          la enseñanza y las transmisiones cristianas.
+        </p>
+
+        <p class="scripture">
+          “Id por todo el mundo y predicad el evangelio a toda criatura.”
+        </p>
+
+        <span class="scripture-reference">
+          Marcos 16:15
+        </span>
+
       </div>
-      <div class="verse-card">
-        <p>“No sólo de pan vivirá el hombre, sino de toda palabra que sale de la boca de Dios.”</p>
-        <strong>Mateo 4:4</strong>
-      </div>
+
     </section>
 
-    <section class="section media-section">
+
+    <!-- ABOUT -->
+    <section id="nosotros" class="section about-section">
+
+      <div class="about-grid">
+
+        <div>
+
+          <p class="eyebrow">
+            QUIÉNES SOMOS
+          </p>
+
+          <h2>
+            Más que una estación de radio
+          </h2>
+
+          <p>
+            PDV Radio Internacional es parte del ministerio Pan de Vida,
+            utilizando los medios digitales para llevar un mensaje de
+            salvación, esperanza y transformación.
+          </p>
+
+          <p>
+            Desde Denver hacia el mundo, nuestra visión es conectar
+            personas con la Palabra de Dios y crear una comunidad de fe
+            sin fronteras.
+          </p>
+
+          <a
+            href="https://pandevidadenver.com"
+            target="_blank"
+            class="text-link"
+          >
+            Conoce Pan de Vida →
+          </a>
+
+        </div>
+
+
+        <div class="about-card">
+
+          <div class="about-icon">
+            🌎
+          </div>
+
+          <h3>
+            Una señal sin fronteras
+          </h3>
+
+          <p>
+            Escucha PDV Radio Internacional desde cualquier lugar
+            y comparte nuestra señal con familiares y amigos.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROGRAMMING -->
+    <section id="programacion" class="section programs-section">
+
       <div class="section-heading">
-        <p class="eyebrow">CONECTA</p>
-        <h2>Transmisiones y comunidad</h2>
-        <p>Este bloque puede mostrar videos recientes de YouTube, transmisiones de Facebook, fotografías de eventos y mensajes del ministerio.</p>
+
+        <p class="eyebrow">
+          AL AIRE
+        </p>
+
+        <h2>
+          Programación
+        </h2>
+
+        <p>
+          Contenido creado para fortalecer tu fe durante toda la semana.
+        </p>
+
       </div>
-      <div class="media-grid">
-        <a class="media-card" href="https://youtube.com/@pdvradioint" target="_blank" rel="noopener"><strong>YouTube</strong><span>Ver transmisiones y videos →</span></a>
-        <a class="media-card" href="https://www.facebook.com/PdvRadioInternacional/" target="_blank" rel="noopener"><strong>Facebook</strong><span>Seguir PDV Radio Internacional →</span></a>
+
+
+      <div class="program-grid">
+
+        <article class="program-card">
+
+          <span class="program-icon">
+            🎙️
+          </span>
+
+          <h3>
+            Predicación
+          </h3>
+
+          <p>
+            Mensajes y enseñanzas basadas en la Palabra de Dios.
+          </p>
+
+        </article>
+
+
+        <article class="program-card">
+
+          <span class="program-icon">
+            🎵
+          </span>
+
+          <h3>
+            Música Cristiana
+          </h3>
+
+          <p>
+            Alabanza y adoración para acompañarte durante tu día.
+          </p>
+
+        </article>
+
+
+        <article class="program-card">
+
+          <span class="program-icon">
+            📖
+          </span>
+
+          <h3>
+            Enseñanza
+          </h3>
+
+          <p>
+            Programación para crecer espiritualmente y conocer más de Dios.
+          </p>
+
+        </article>
+
+
+        <article class="program-card">
+
+          <span class="program-icon">
+            🔴
+          </span>
+
+          <h3>
+            Transmisiones en Vivo
+          </h3>
+
+          <p>
+            Servicios, eventos y programación especial de Pan de Vida.
+          </p>
+
+        </article>
+
       </div>
+
     </section>
 
+
+    <!-- YOUTUBE -->
+    <section id="videos" class="section media-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          PDV MEDIA
+        </p>
+
+        <h2>
+          Mira nuestras transmisiones
+        </h2>
+
+        <p>
+          Predicaciones, servicios y contenido de PDV disponibles
+          en nuestro canal de YouTube.
+        </p>
+
+      </div>
+
+
+      <div class="media-buttons">
+
+        <a
+          href="https://youtube.com/@ericromerochungry?si=HmNb-V5htd3egSe1"
+          target="_blank"
+          class="social-card youtube-card"
+        >
+
+          <span class="social-icon">
+            ▶
+          </span>
+
+          <div>
+            <h3>YouTube</h3>
+            <p>Ver transmisiones y videos</p>
+          </div>
+
+        </a>
+
+
+        <a
+          href="https://www.facebook.com/share/1EoV5WscHw/?mibextid=wwXIfr"
+          target="_blank"
+          class="social-card facebook-card"
+        >
+
+          <span class="social-icon">
+            f
+          </span>
+
+          <div>
+            <h3>Facebook</h3>
+            <p>Síguenos y mantente conectado</p>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PAN DE VIDA CONNECTION -->
+    <section class="church-section">
+
+      <div class="church-content">
+
+        <p class="eyebrow">
+          NUESTRO MINISTERIO
+        </p>
+
+        <h2>
+          Pan de Vida
+        </h2>
+
+        <p>
+          PDV Radio Internacional es un ministerio dedicado a compartir
+          la fe y el mensaje de Jesucristo a través de los medios de
+          comunicación.
+        </p>
+
+        <a
+          href="https://pandevidadenver.com"
+          target="_blank"
+          class="btn btn-light"
+        >
+          Visitar Pan de Vida
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
     <section id="contacto" class="section contact-section">
-      <div>
-        <p class="eyebrow">CONTACTO</p>
-        <h2>Mantente conectado.</h2>
-        <p>Agrega aquí el teléfono, correo electrónico, dirección y enlaces oficiales del ministerio.</p>
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          CONÉCTATE
+        </p>
+
+        <h2>
+          PDV Radio Internacional
+        </h2>
+
+        <p>
+          Escucha, comparte y forma parte de nuestra comunidad.
+        </p>
+
       </div>
-      <a class="btn btn-primary" href="mailto:CONTACT_EMAIL_HERE">Enviar un mensaje</a>
+
+
+      <div class="contact-buttons">
+
+        <a
+          href="#en-vivo"
+          class="btn btn-primary"
+        >
+          🎧 Escuchar Radio
+        </a>
+
+        <a
+          href="https://www.facebook.com/share/1EoV5WscHw/?mibextid=wwXIfr"
+          target="_blank"
+          class="btn btn-secondary"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://youtube.com/@ericromerochungry?si=HmNb-V5htd3egSe1"
+          target="_blank"
+          class="btn btn-secondary"
+        >
+          YouTube
+        </a>
+
+      </div>
+
     </section>
+
   </main>
 
-  <footer>
-    <div><strong>PDV Radio Internacional</strong><p>Pan de Vida Radio Internacional</p></div>
-    <p>© <span id="year"></span> PDV Radio Internacional. Todos los derechos reservados.</p>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-brand">
+
+      <strong>
+        PDV RADIO INTERNACIONAL
+      </strong>
+
+      <span>
+        La Radio de los Pentecostales
+      </span>
+
+    </div>
+
+    <p>
+      Un ministerio de Pan de Vida
+    </p>
+
+    <p class="copyright">
+      © <span id="year"></span> PDV Radio Internacional.
+      Todos los derechos reservados.
+    </p>
+
   </footer>
 
+
+  <!-- MOBILE LIVE BUTTON -->
+  <a href="#en-vivo" class="floating-live">
+
+    <span class="live-dot"></span>
+
+    EN VIVO · ESCUCHAR
+
+  </a>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
