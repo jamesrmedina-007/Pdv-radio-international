@@ -16,7 +16,6 @@
 
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
 
     <a href="#inicio" class="brand">
@@ -29,12 +28,56 @@
     </button>
 
     <nav class="main-nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#en-vivo">En Vivo</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#programacion">Programación</a>
-      <a href="#videos">Videos</a>
-      <a href="#contacto">Contacto</a>
+
+      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+
+      <a
+        href="#en-vivo"
+        class="nav-live"
+        data-es="En Vivo"
+        data-en="Live"
+      >
+        En Vivo
+      </a>
+
+      <a
+        href="#nosotros"
+        data-es="Nosotros"
+        data-en="About Us"
+      >
+        Nosotros
+      </a>
+
+      <a
+        href="#programacion"
+        data-es="Programación"
+        data-en="Programming"
+      >
+        Programación
+      </a>
+
+      <a
+        href="#videos"
+        data-es="Videos"
+        data-en="Videos"
+      >
+        Videos
+      </a>
+
+      <a
+        href="#contacto"
+        data-es="Contacto"
+        data-en="Contact"
+      >
+        Contacto
+      </a>
+
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
     </nav>
 
   </header>
@@ -49,7 +92,11 @@
 
       <div class="hero-content">
 
-        <div class="live-badge">
+        <div
+          class="live-badge"
+          data-es="EN VIVO"
+          data-en="LIVE"
+        >
           <span class="live-dot"></span>
           EN VIVO
         </div>
@@ -60,28 +107,45 @@
           class="hero-logo"
         >
 
-        <p class="hero-kicker">
+        <p
+          class="hero-kicker"
+          data-es="PAN DE VIDA PRESENTA"
+          data-en="PAN DE VIDA PRESENTS"
+        >
           PAN DE VIDA PRESENTA
         </p>
 
-        <h1>
-          PDV Radio<br>
-          <span>Internacional</span>
+        <h1
+          class="hero-title"
+          data-es="Una Señal de Fe Para el Mundo"
+          data-en="A Signal of Faith to the World"
+        >
+          Una Señal de Fe Para el Mundo
         </h1>
 
-        <h2>
+        <h2
+          data-es="La Radio de los Pentecostales"
+          data-en="The Radio of the Pentecostals"
+        >
           La Radio de los Pentecostales
         </h2>
 
-        <p class="hero-description">
-          Una señal llevando el mensaje de Jesucristo,
-          fe, esperanza, adoración y la Palabra de Dios
-          alrededor del mundo.
+        <p
+          class="hero-description"
+          data-es="Llevando el mensaje de Jesucristo, fe, esperanza, adoración y la Palabra de Dios alrededor del mundo."
+          data-en="Sharing the message of Jesus Christ, faith, hope, worship and the Word of God around the world."
+        >
+          Llevando el mensaje de Jesucristo, fe, esperanza, adoración y la Palabra de Dios alrededor del mundo.
         </p>
 
         <div class="hero-buttons">
 
-          <a href="#en-vivo" class="btn btn-primary">
+          <a
+            href="#en-vivo"
+            class="btn btn-primary"
+            data-es="▶ Escuchar en Vivo"
+            data-en="▶ Listen Live"
+          >
             ▶ Escuchar en Vivo
           </a>
 
@@ -89,6 +153,8 @@
             href="https://youtube.com/@ericromerochungry?si=HmNb-V5htd3egSe1"
             target="_blank"
             class="btn btn-secondary"
+            data-es="Ver Transmisiones"
+            data-en="Watch Broadcasts"
           >
             Ver Transmisiones
           </a>
@@ -100,20 +166,30 @@
     </section>
 
 
-    <!-- LIVE PLAYER -->
+    <!-- LIVE -->
     <section id="en-vivo" class="section live-section">
 
       <div class="section-heading">
 
-        <p class="eyebrow">
-          🔴 TRANSMITIENDO
+        <p
+          class="eyebrow"
+          data-es="🔴 TRANSMITIENDO AHORA"
+          data-en="🔴 LIVE NOW"
+        >
+          🔴 TRANSMITIENDO AHORA
         </p>
 
-        <h2>
+        <h2
+          data-es="Escucha PDV Radio Internacional"
+          data-en="Listen to PDV Radio International"
+        >
           Escucha PDV Radio Internacional
         </h2>
 
-        <p>
+        <p
+          data-es="Nuestra señal está disponible para ti dondequiera que estés."
+          data-en="Our broadcast is available wherever you are."
+        >
           Nuestra señal está disponible para ti dondequiera que estés.
         </p>
 
@@ -140,21 +216,33 @@
 
       <div class="mission-content">
 
-        <p class="eyebrow">
+        <p
+          class="eyebrow"
+          data-es="NUESTRA MISIÓN"
+          data-en="OUR MISSION"
+        >
           NUESTRA MISIÓN
         </p>
 
-        <h2>
+        <h2
+          data-es="Una voz de fe para las naciones"
+          data-en="A voice of faith for the nations"
+        >
           Una voz de fe para las naciones
         </h2>
 
-        <p>
-          PDV Radio Internacional existe para compartir el Evangelio
-          de Jesucristo a través de la radio, la música, la predicación,
-          la enseñanza y las transmisiones cristianas.
+        <p
+          data-es="PDV Radio Internacional existe para compartir el Evangelio de Jesucristo a través de la radio, la música, la predicación, la enseñanza y las transmisiones cristianas."
+          data-en="PDV Radio International exists to share the Gospel of Jesus Christ through radio, music, preaching, teaching and Christian broadcasts."
+        >
+          PDV Radio Internacional existe para compartir el Evangelio de Jesucristo a través de la radio, la música, la predicación, la enseñanza y las transmisiones cristianas.
         </p>
 
-        <p class="scripture">
+        <p
+          class="scripture"
+          data-es="“Id por todo el mundo y predicad el evangelio a toda criatura.”"
+          data-en="“Go into all the world and preach the gospel to all creation.”"
+        >
           “Id por todo el mundo y predicad el evangelio a toda criatura.”
         </p>
 
@@ -174,30 +262,41 @@
 
         <div>
 
-          <p class="eyebrow">
+          <p
+            class="eyebrow"
+            data-es="QUIÉNES SOMOS"
+            data-en="WHO WE ARE"
+          >
             QUIÉNES SOMOS
           </p>
 
-          <h2>
+          <h2
+            data-es="Más que una estación de radio"
+            data-en="More than a radio station"
+          >
             Más que una estación de radio
           </h2>
 
-          <p>
-            PDV Radio Internacional es parte del ministerio Pan de Vida,
-            utilizando los medios digitales para llevar un mensaje de
-            salvación, esperanza y transformación.
+          <p
+            data-es="PDV Radio Internacional es parte del ministerio Pan de Vida, utilizando los medios digitales para llevar un mensaje de salvación, esperanza y transformación."
+            data-en="PDV Radio International is part of the Pan de Vida ministry, using digital media to share a message of salvation, hope and transformation."
+          >
+            PDV Radio Internacional es parte del ministerio Pan de Vida, utilizando los medios digitales para llevar un mensaje de salvación, esperanza y transformación.
           </p>
 
-          <p>
-            Desde Denver hacia el mundo, nuestra visión es conectar
-            personas con la Palabra de Dios y crear una comunidad de fe
-            sin fronteras.
+          <p
+            data-es="Desde Denver hacia el mundo, nuestra visión es conectar personas con la Palabra de Dios y crear una comunidad de fe sin fronteras."
+            data-en="From Denver to the world, our vision is to connect people with the Word of God and create a community of faith without borders."
+          >
+            Desde Denver hacia el mundo, nuestra visión es conectar personas con la Palabra de Dios y crear una comunidad de fe sin fronteras.
           </p>
 
           <a
             href="https://pandevidadenver.com"
             target="_blank"
             class="text-link"
+            data-es="Conoce Pan de Vida →"
+            data-en="Discover Pan de Vida →"
           >
             Conoce Pan de Vida →
           </a>
@@ -207,17 +306,20 @@
 
         <div class="about-card">
 
-          <div class="about-icon">
-            🌎
-          </div>
+          <div class="about-icon">🌎</div>
 
-          <h3>
+          <h3
+            data-es="Una señal sin fronteras"
+            data-en="A signal without borders"
+          >
             Una señal sin fronteras
           </h3>
 
-          <p>
-            Escucha PDV Radio Internacional desde cualquier lugar
-            y comparte nuestra señal con familiares y amigos.
+          <p
+            data-es="Escucha PDV Radio Internacional desde cualquier lugar y comparte nuestra señal con familiares y amigos."
+            data-en="Listen to PDV Radio International from anywhere and share our broadcast with family and friends."
+          >
+            Escucha PDV Radio Internacional desde cualquier lugar y comparte nuestra señal con familiares y amigos.
           </p>
 
         </div>
@@ -232,15 +334,25 @@
 
       <div class="section-heading">
 
-        <p class="eyebrow">
+        <p
+          class="eyebrow"
+          data-es="AL AIRE"
+          data-en="ON AIR"
+        >
           AL AIRE
         </p>
 
-        <h2>
+        <h2
+          data-es="Programación"
+          data-en="Programming"
+        >
           Programación
         </h2>
 
-        <p>
+        <p
+          data-es="Contenido creado para fortalecer tu fe durante toda la semana."
+          data-en="Content created to strengthen your faith throughout the week."
+        >
           Contenido creado para fortalecer tu fe durante toda la semana.
         </p>
 
@@ -251,15 +363,19 @@
 
         <article class="program-card">
 
-          <span class="program-icon">
-            🎙️
-          </span>
+          <span class="program-icon">🎙️</span>
 
-          <h3>
+          <h3
+            data-es="Predicación"
+            data-en="Preaching"
+          >
             Predicación
           </h3>
 
-          <p>
+          <p
+            data-es="Mensajes y enseñanzas basadas en la Palabra de Dios."
+            data-en="Messages and teachings based on the Word of God."
+          >
             Mensajes y enseñanzas basadas en la Palabra de Dios.
           </p>
 
@@ -268,15 +384,19 @@
 
         <article class="program-card">
 
-          <span class="program-icon">
-            🎵
-          </span>
+          <span class="program-icon">🎵</span>
 
-          <h3>
+          <h3
+            data-es="Música Cristiana"
+            data-en="Christian Music"
+          >
             Música Cristiana
           </h3>
 
-          <p>
+          <p
+            data-es="Alabanza y adoración para acompañarte durante tu día."
+            data-en="Praise and worship to accompany you throughout your day."
+          >
             Alabanza y adoración para acompañarte durante tu día.
           </p>
 
@@ -285,15 +405,19 @@
 
         <article class="program-card">
 
-          <span class="program-icon">
-            📖
-          </span>
+          <span class="program-icon">📖</span>
 
-          <h3>
+          <h3
+            data-es="Enseñanza"
+            data-en="Teaching"
+          >
             Enseñanza
           </h3>
 
-          <p>
+          <p
+            data-es="Programación para crecer espiritualmente y conocer más de Dios."
+            data-en="Programming designed to help you grow spiritually and know God more."
+          >
             Programación para crecer espiritualmente y conocer más de Dios.
           </p>
 
@@ -302,15 +426,19 @@
 
         <article class="program-card">
 
-          <span class="program-icon">
-            🔴
-          </span>
+          <span class="program-icon">🔴</span>
 
-          <h3>
+          <h3
+            data-es="Transmisiones en Vivo"
+            data-en="Live Broadcasts"
+          >
             Transmisiones en Vivo
           </h3>
 
-          <p>
+          <p
+            data-es="Servicios, eventos y programación especial de Pan de Vida."
+            data-en="Services, events and special programming from Pan de Vida."
+          >
             Servicios, eventos y programación especial de Pan de Vida.
           </p>
 
@@ -321,22 +449,25 @@
     </section>
 
 
-    <!-- YOUTUBE -->
+    <!-- MEDIA -->
     <section id="videos" class="section media-section">
 
       <div class="section-heading">
 
-        <p class="eyebrow">
-          PDV MEDIA
-        </p>
+        <p class="eyebrow">PDV MEDIA</p>
 
-        <h2>
+        <h2
+          data-es="Mira nuestras transmisiones"
+          data-en="Watch our broadcasts"
+        >
           Mira nuestras transmisiones
         </h2>
 
-        <p>
-          Predicaciones, servicios y contenido de PDV disponibles
-          en nuestro canal de YouTube.
+        <p
+          data-es="Predicaciones, servicios y contenido de PDV disponibles en nuestro canal de YouTube."
+          data-en="Preaching, services and PDV content available on our YouTube channel."
+        >
+          Predicaciones, servicios y contenido de PDV disponibles en nuestro canal de YouTube.
         </p>
 
       </div>
@@ -350,13 +481,17 @@
           class="social-card youtube-card"
         >
 
-          <span class="social-icon">
-            ▶
-          </span>
+          <span class="social-icon">▶</span>
 
           <div>
             <h3>YouTube</h3>
-            <p>Ver transmisiones y videos</p>
+
+            <p
+              data-es="Ver transmisiones y videos"
+              data-en="Watch broadcasts and videos"
+            >
+              Ver transmisiones y videos
+            </p>
           </div>
 
         </a>
@@ -368,13 +503,17 @@
           class="social-card facebook-card"
         >
 
-          <span class="social-icon">
-            f
-          </span>
+          <span class="social-icon">f</span>
 
           <div>
             <h3>Facebook</h3>
-            <p>Síguenos y mantente conectado</p>
+
+            <p
+              data-es="Síguenos y mantente conectado"
+              data-en="Follow us and stay connected"
+            >
+              Síguenos y mantente conectado
+            </p>
           </div>
 
         </a>
@@ -384,29 +523,34 @@
     </section>
 
 
-    <!-- PAN DE VIDA CONNECTION -->
+    <!-- PAN DE VIDA -->
     <section class="church-section">
 
       <div class="church-content">
 
-        <p class="eyebrow">
+        <p
+          class="eyebrow"
+          data-es="NUESTRO MINISTERIO"
+          data-en="OUR MINISTRY"
+        >
           NUESTRO MINISTERIO
         </p>
 
-        <h2>
-          Pan de Vida
-        </h2>
+        <h2>Pan de Vida</h2>
 
-        <p>
-          PDV Radio Internacional es un ministerio dedicado a compartir
-          la fe y el mensaje de Jesucristo a través de los medios de
-          comunicación.
+        <p
+          data-es="PDV Radio Internacional es un ministerio dedicado a compartir la fe y el mensaje de Jesucristo a través de los medios de comunicación."
+          data-en="PDV Radio International is a ministry dedicated to sharing faith and the message of Jesus Christ through media."
+        >
+          PDV Radio Internacional es un ministerio dedicado a compartir la fe y el mensaje de Jesucristo a través de los medios de comunicación.
         </p>
 
         <a
           href="https://pandevidadenver.com"
           target="_blank"
           class="btn btn-light"
+          data-es="Visitar Pan de Vida"
+          data-en="Visit Pan de Vida"
         >
           Visitar Pan de Vida
         </a>
@@ -421,15 +565,20 @@
 
       <div class="section-heading">
 
-        <p class="eyebrow">
+        <p
+          class="eyebrow"
+          data-es="CONÉCTATE"
+          data-en="CONNECT"
+        >
           CONÉCTATE
         </p>
 
-        <h2>
-          PDV Radio Internacional
-        </h2>
+        <h2>PDV Radio Internacional</h2>
 
-        <p>
+        <p
+          data-es="Escucha, comparte y forma parte de nuestra comunidad."
+          data-en="Listen, share and become part of our community."
+        >
           Escucha, comparte y forma parte de nuestra comunidad.
         </p>
 
@@ -441,6 +590,8 @@
         <a
           href="#en-vivo"
           class="btn btn-primary"
+          data-es="🎧 Escuchar Radio"
+          data-en="🎧 Listen to Radio"
         >
           🎧 Escuchar Radio
         </a>
@@ -468,7 +619,6 @@
   </main>
 
 
-  <!-- FOOTER -->
   <footer class="site-footer">
 
     <div class="footer-brand">
@@ -477,31 +627,43 @@
         PDV RADIO INTERNACIONAL
       </strong>
 
-      <span>
+      <span
+        data-es="La Radio de los Pentecostales"
+        data-en="The Radio of the Pentecostals"
+      >
         La Radio de los Pentecostales
       </span>
 
     </div>
 
-    <p>
+    <p
+      data-es="Un ministerio de Pan de Vida"
+      data-en="A ministry of Pan de Vida"
+    >
       Un ministerio de Pan de Vida
     </p>
 
     <p class="copyright">
       © <span id="year"></span> PDV Radio Internacional.
-      Todos los derechos reservados.
+      <span
+        data-es="Todos los derechos reservados."
+        data-en="All rights reserved."
+      >
+        Todos los derechos reservados.
+      </span>
     </p>
 
   </footer>
 
 
-  <!-- MOBILE LIVE BUTTON -->
-  <a href="#en-vivo" class="floating-live">
-
+  <a
+    href="#en-vivo"
+    class="floating-live"
+    data-es="EN VIVO · ESCUCHAR"
+    data-en="LIVE · LISTEN"
+  >
     <span class="live-dot"></span>
-
     EN VIVO · ESCUCHAR
-
   </a>
 
 
